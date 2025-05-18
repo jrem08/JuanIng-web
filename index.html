@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Metadatos -->
+    <meta charset="utf-8">
+    <meta name="author" content="Jane Doe">
+    <meta name="description" content="Portafolio de desarrollo web de Jane Doe">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Titulo -->
+    <title>Juan Rengifo | Desarrollo Web</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="icono.png">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Iconos de Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- CSS -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#">
+            <img src="icono.png" width="50" alt="Logo de la página web">
+          </a>
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sobre-mi">Sobre mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyectos">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#habilidades">Habilidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Seccion Hero -->
+    <section class="hero align-items-stretch">
+      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+        <img class="hero-imagen-desarrollador rounded-circle" src="Desarrollador.jpg" alt="Foto de Juan David Rengifo">
+        <h1>Juan David Rengifo</h1>
+        <h2>Desarrollador web</h2>
+      </div>
+      <div class="hero-inferior">
+        <img class="hero-inferior-imagen img-fluid" src="hero-inferior (1).svg" alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React.">
+      </div>
+    </section>
+
+    <!-- Sobre mi -->
+    <section id="sobre-mi" class="sobre-mi seccion-oscura">
+      <div class="contenedor">
+        <h2 class="seccion-titulo">Sobre mi</h2>
+        <p class="seccion-texto">Soy Desarrollador Web con [2 años] de experiencia en la creación de sitios y aplicaciones web modernas, funcionales y centradas en la experiencia del usuario. Me especializo en construir soluciones escalables, rápidas y accesibles, aplicando buenas prácticas de desarrollo ágil, control de versiones con Git, y requerimientos. Me apasiona el aprendizaje constante, resolver problemas complejos y trabajar en equipos multidisciplinarios para llevar ideas del concepto al producto final.
+
+Busco seguir creciendo profesionalmente en proyectos que me permitan innovar, mejorar procesos digitales y aportar valor mediante el uso de la tecnología.</p>
+      </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section class="experiencia seccion-clara">
+      <h2 class="seccion-titulo">Servicios</h2>
+      <div class="container text-center">
+        <div class="row">
+          <!-- Desarrollo Web -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Desarrollo Web</p>
+            <p>Diseño y desarrollo de sitios web rapidos, seguros y adaptables a cualquier dispositivo. Me enfoco en que cada sitio sea claro, atractivo y pensado para convertir visitantes en clientes. </p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">React</span>
+              <span class="badge text-bg-primary">Nodejs</span>
+              <span class="badge text-bg-primary">Express</span>
+              <span class="badge text-bg-primary">Mysql</span>
+            </div>
+          </div>
+          <!-- Articulos -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Despliegue</p>
+            <p>Publico tu sitio web o aplicacion web en la nube con configuraciones optimizadas para velocidad, seguridad, estabilidad y dominios personalizados.</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Hosting</span>
+              <span class="badge text-bg-primary">Vercel</span>
+              <span class="badge text-bg-primary">Netlify</span>
+            </div>
+          </div>
+          <!-- Estudiante -->
+          <div class="columna col-12 col-md-4">
+            <i class="bi bi-laptop"></i>
+            <p class="experiencia-titulo">Diseño web</p>
+            <p>Diseño interfaces limpias y funcionales que garantizan una navegacion intuitiva y accesible.</p>
+            <div class="badges-contenedor">
+              <span class="badge text-bg-primary">Figma</span>
+              <span class="badge text-bg-primary">Ps</span>
+              <span class="badge text-bg-primary">Ai</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
+      <h2 class="seccion-titulo texto-negro">Proyectos</h2>
+      <!-- Galeria de Proyectos -->
+      <div class="container text-center proyectos-contenedor">
+        <div class="row">
+          <!-- Proyecto 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="Proyec1.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 1</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/jrem08/Poke-API" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://jrem08.github.io/Poke-API/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="Proyect2.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 2</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/jrem08/Real-estate" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://jrem08.github.io/Real-estate/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="Pro3.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 3</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/jrem08/Calculadora" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://jrem08.github.io/Calculadora/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 4 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="Proyect4.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 4</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/jrem08/Registro-de-automoviles" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://jrem08.github.io/Registro-de-automoviles/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 5 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="Proyect5.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 5</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/jrem08/Cafeteria-Maria" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://jrem08.github.io/Cafeteria-Maria/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Proyecto 6 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="proyecto">
+              <img src="Proyect6.png" alt="Proyecto 1">
+              <div class="overlay">
+                <p>Proyecto 6</p>
+                <div class="iconos-contenedor">
+                  <a href="https://github.com/jrem08/online-pizzas" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                  </a>
+                  <a href="https://jrem08.github.io/online-pizzas/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-laptop"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/jrem08" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">
+          Ver más proyectos
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
+    </section>
+
+    <!-- Articulos -->
+    <section class="articulos justify-content-start">
+      <h2 class="seccion-titulo texto-negro">Artículos</h2>
+      <div class="card">
+        <div class="card-header">
+          Más recientes
+        </div>
+        <ul class="list-group list-group-flush">
+          <a href="https://www.freecodecamp.org/espanol/news/" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">
+              El decorador @property en Python - cómo usarlo, ventajas y sintaxis
+            </li>
+          </a>
+          <a href="https://www.freecodecamp.org/espanol/news/" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">
+              Python tutorial ciclos while - while True ejemplos de sintaxis y ciclos infinitos
+            </li>
+          </a>
+          <a href="https://www.freecodecamp.org/espanol/news/" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">
+              Python leer archivo JSON - cómo cargar JSON desde un archivo y procesar dumps
+            </li>
+          </a>
+          <a href="https://www.freecodecamp.org/espanol/news/" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">
+              Python cómo escribir en un archivo - abrir, leer, escribir y otras funciones de archivos explicadas
+            </li>
+          </a>
+          <a href="https://www.freecodecamp.org/espanol/news/" target="_blank" rel="noopener noreferrer">
+            <li class="list-group-item">
+              ¿Para qué se usa Python? 10+ usos del lenguaje de programación Python
+            </li>
+          </a>
+        </ul>
+      </div>
+      <a href="https://www.freecodecamp.org/espanol/news/" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">
+          Ver más artículos
+          <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+      </a>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="habilidades seccion-clara">
+      <h2 class="seccion-titulo">Habilidades</h2>
+      
+      <!-- Stack -->
+      <div class="container habilidades-contenedor">
+  <div class="row justify-content-center">
+    <div class="col-6 col-md-4 col-lg-2 habilidad text-center">
+      <img src="html5.svg" alt="HTML5">
+      <p>HTML5</p>
+    </div>
+    <div class="col-6 col-md-4 col-lg-2 habilidad text-center">
+      <img src="css_old.svg" alt="CSS3">
+      <p>CSS3</p>
+    </div>
+    <div class="col-6 col-md-4 col-lg-2 habilidad text-center">
+      <img src="javascript.svg" alt="JavaScript">
+      <p>JavaScript</p>
+    </div>
+    <div class="col-6 col-md-4 col-lg-2 habilidad text-center">
+      <img src="react_light.svg" alt="React">
+      <p>React</p>
+    </div>
+    <div class="col-6 col-md-4 col-lg-2 habilidad text-center">
+      <img src="nodejs.svg" alt="nodejs">
+      <p>Nodejs</p>
+    </div>
+    <div class="col-6 col-md-4 col-lg-2 habilidad text-center">
+      <img src="tailwindcss.svg" alt="tailwindcss">
+      <p>Tailwind</p>
+    </div>
+     <div class="col-6 col-md-4 col-lg-2 habilidad text-center">
+      <img src="git.svg" alt="git">
+      <p>Git</p>
+    </div>
+     <div class="col-6 col-md-4 col-lg-2 habilidad text-center">
+      <img src="bootstrap.svg" alt="bootstrap">
+      <p>Bootstrap</p>
+    </div>
+     <div class="col-6 col-md-4 col-lg-2 habilidad text-center">
+      <img src="figma.svg" alt="figma">
+      <p>Figma</p>
+    </div>
+     <div class="col-6 col-md-4 col-lg-2 habilidad text-center">
+      <img src="python.svg" alt="python">
+      <p>Python</p>
+    </div>
+     <div class="col-6 col-md-4 col-lg-2 habilidad text-center">
+      <img src="netlify.svg" alt="netlify">
+      <p>Netlify</p>
+    </div>
+     <div class="col-6 col-md-4 col-lg-2 habilidad text-center">
+      <img src="mysql.svg" alt="mysql">
+      <p>Mysql</p>
+    </div>
+  </div>
+
+      </div>
+
+    </section>
+    
+    <!-- Pie de pagina (footer) -->
+    <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center"> 
+      <img class="footer-logo" src="icono-blanco.svg" alt="Logo del portafolio">
+      <p class="footer-texto text-center">Aprendo y creo todos los días.<br>Creemos un proyecto juntos.</p>
+      <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+        <a href="https://github.com/jrem08" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/juan-david-702a6a306/" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="medrandajuan843@gmail.com" target="_blank" rel="noopener noreferrer">
+          <i class="bi bi-envelope"></i>
+        </a>
+      </div>
+      <div class="derechos-de-autor">&#169;2025 Juan Ing. Todos los derechos reservados. </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
